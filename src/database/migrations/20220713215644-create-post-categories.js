@@ -17,8 +17,7 @@ module.exports = {
         onDelete: 'CASCADE',
         references: { model: 'Categories', key: 'id' },
       },
-    },
-      { timestamps: false, });
+    });
   },
 
   down: (queryInterface) => {

@@ -26,9 +26,7 @@ module.exports = {
         type: DataTypes.STRING,
       },
 
-    },
-
-      { timestamps: false, });
+    });
 
   },
 
