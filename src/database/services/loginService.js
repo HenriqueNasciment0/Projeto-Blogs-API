@@ -2,7 +2,7 @@ const { User } = require('../models');
 const sendError = require('../middlewares/sendError');
 const { createToken } = require('../middlewares/createToken');
 
-const create = async ({ email, password }) => {
+const createT = async ({ email, password }) => {
     if (!email || !password) {
         return sendError(400, 'Some required fields are missing');
     }
@@ -13,9 +13,9 @@ const create = async ({ email, password }) => {
         return sendError(400, 'Invalid fields');
     }
 
-    return createToken(Number(user.id));
+    return createToken(user.id);
   };
 
 module.exports = {
-    create,
+    createT,
 };

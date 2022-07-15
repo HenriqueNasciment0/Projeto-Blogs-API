@@ -1,7 +1,8 @@
 require('dotenv').config();
 const app = require('./api');
 const customError = require('./database/middlewares/customError');
-const UserController = require('./database/controllers/loginController');
+const LoginController = require('./database/controllers/loginController');
+const UserController = require('./database/controllers/userController');
 
 // não remova a variável `API_PORT` ou o `listen`
 const port = process.env.API_PORT || 3000;
@@ -11,7 +12,9 @@ app.get('/', (_request, response) => {
   response.send();
 });
 
-app.post('/login', UserController.create);
+app.post('/user', UserController.create);
+
+app.post('/login', LoginController.createT);
 
 app.use(customError);
 
