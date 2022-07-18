@@ -24,6 +24,8 @@ app.post('/login', LoginController.createT);
 
 app.post('/categories', Auth, CategoryController.createCategory);
 
+app.get('/categories', Auth, CategoryController.getAll);
+
 app.use(customError);
 
 app.listen(port, () => console.log('ouvindo porta', port));
