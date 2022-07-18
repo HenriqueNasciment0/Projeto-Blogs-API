@@ -17,6 +17,8 @@ app.post('/user', UserController.create);
 
 app.get('/user', Auth, UserController.getAll);
 
+app.get('/user/:id', Auth, UserController.getById);
+
 app.post('/login', LoginController.createT);
 
 app.use(customError);
