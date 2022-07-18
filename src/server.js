@@ -3,6 +3,7 @@ const app = require('./api');
 const customError = require('./database/middlewares/customError');
 const LoginController = require('./database/controllers/loginController');
 const UserController = require('./database/controllers/userController');
+const CategoryController = require('./database/controllers/categoryController');
 const Auth = require('./database/middlewares/auth');
 
 // não remova a variável `API_PORT` ou o `listen`
@@ -20,6 +21,8 @@ app.get('/user', Auth, UserController.getAll);
 app.get('/user/:id', Auth, UserController.getById);
 
 app.post('/login', LoginController.createT);
+
+app.post('/categories', Auth, CategoryController.createCategory);
 
 app.use(customError);
 
