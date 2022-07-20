@@ -9,7 +9,7 @@ const jwtConfig = {
 };
 
 const createToken = (id) => {
-  const token = jwt.sign({ data: id }, secret, jwtConfig);
+  const token = jwt.sign({ id }, secret, jwtConfig);
   return token;
 };
 
