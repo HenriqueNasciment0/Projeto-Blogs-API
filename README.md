@@ -6,7 +6,6 @@
 
 Tivemos que criar uma API RESTful de blog usando a arquitetura MSC (Model-Service-Controller). A conexão com o banco de dados precisou ser feita com o ORM Sequelize e a autenticação com Json Web Token.
 
-* Utilizei o mocha, chai e sinon para escrever os testes de unidade.
 
 ## 🚀 Tecnologias
 
