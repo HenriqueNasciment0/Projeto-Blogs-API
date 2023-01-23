@@ -8,11 +8,6 @@ Tivemos que criar uma API RESTful de blog usando a arquitetura MSC (Model-Servic
 
 * Utilizei o mocha, chai e sinon para escrever os testes de unidade.
 
-<details>
-  <summary><strong>👨‍💻 Meu resultado no Projeto 23</strong></summary><br />
-<img src="./public/store-manager.png"/>
-</details>
-
 ## 🚀 Tecnologias
 
 * Node.js
