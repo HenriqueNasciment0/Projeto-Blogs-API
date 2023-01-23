@@ -51,6 +51,7 @@ Acesse a rota http://localhost:3000/docs para acessar a documentação da API. O
 
 * Ler e escrever arquivos localmente com NodeJS;
 * Entender os conceitos básicos de como o JavaScript funciona;
+* Compreender os relacionamentos usando Sequelize;
 * Detectar e solucionar problemas no código de forma mais objetiva;
 * Entender o que é o HTTP, o que é uma API e o que os dois têm a ver com o Express;
 * Escrever APIs utilizando Node e Express;
